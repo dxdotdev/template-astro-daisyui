@@ -1,3 +1,13 @@
 import { defineConfig } from 'astro/config'
 
-export default defineConfig({})
+import alpinejs from '@astrojs/alpinejs'
+import tailwind from '@astrojs/tailwind'
+
+export default defineConfig({
+  integrations: [
+    tailwind(),
+    alpinejs({
+      entrypoint: 'alpine.config.ts',
+    }),
+  ],
+})
