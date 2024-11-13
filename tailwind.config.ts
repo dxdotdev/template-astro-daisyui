@@ -2,7 +2,7 @@ import daisyui from 'daisyui'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro}'],
+  content: ['./src/**/*.astro'],
   theme: {
     extend: {},
   },
